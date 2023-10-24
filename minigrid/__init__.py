@@ -387,6 +387,18 @@ def register_minigrid_envs():
         kwargs={"minNumRooms": 6, "maxNumRooms": 6},
     )
 
+    ## I added these for experiments
+    register(
+    id="MiniGrid-MultiRoom-N7-S8-v0",
+    entry_point="minigrid.envs:MultiRoomEnv",
+    kwargs={"minNumRooms": 7, "maxNumRooms": 7, "maxRoomSize": 8},
+)
+    register(
+    id="MiniGrid-MultiRoom-N7-S4-v0",
+    entry_point="minigrid.envs:MultiRoomEnv",
+    kwargs={"minNumRooms": 7, "maxNumRooms": 7, "maxRoomSize": 4},
+)
+
     # ObstructedMaze
     # ----------------------------------------
 

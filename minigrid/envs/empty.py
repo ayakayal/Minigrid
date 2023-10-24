@@ -80,6 +80,7 @@ class EmptyEnv(MiniGridEnv):
 
         if max_steps is None:
             max_steps = 4 * size**2
+        print('HELLO max_steps',max_steps)  
 
         super().__init__(
             mission_space=mission_space,

@@ -5,6 +5,7 @@ from minigrid.core.grid import Grid
 from minigrid.core.mission import MissionSpace
 from minigrid.core.world_object import Door, Goal, Wall
 from minigrid.minigrid_env import MiniGridEnv
+from gymnasium.envs.registration import register
 
 
 class MultiRoom:
