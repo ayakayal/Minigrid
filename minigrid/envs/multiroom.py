@@ -7,6 +7,8 @@ from minigrid.core.world_object import Door, Goal, Wall
 from minigrid.minigrid_env import MiniGridEnv
 
 
+
+
 class MultiRoom:
     def __init__(self, top, size, entryDoorPos, exitDoorPos):
         self.top = top
@@ -96,6 +98,7 @@ class MultiRoomEnv(MiniGridEnv):
 
         if max_steps is None:
             max_steps = maxNumRooms * 20
+            print('aya')
 
         super().__init__(
             mission_space=mission_space,
