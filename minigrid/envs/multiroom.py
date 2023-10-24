@@ -97,6 +97,7 @@ class MultiRoomEnv(MiniGridEnv):
 
         if max_steps is None:
             max_steps = maxNumRooms * 20
+            print('hello master')
 
         super().__init__(
             mission_space=mission_space,
